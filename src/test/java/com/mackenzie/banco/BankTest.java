@@ -11,14 +11,14 @@ class BankTest {
 
     @Test
     public void emprestimoLiberado(){
-        assertEquals("Empréstimo liberado", banco.emprestimo(1200, false, false));
-        assertEquals("Empréstimo liberado", banco.emprestimo(820, true, false));
-        assertEquals("Empréstimo liberado", banco.emprestimo(15000, false, true));
+        assertEquals("Empréstimo Liberado", banco.emprestimo(1200, false, false));
+        assertEquals("Empréstimo Liberado", banco.emprestimo(15000, false, true));
+        assertEquals("Empréstimo Liberado", banco.emprestimo(820, true, false));
     }
 
     @Test
     public void emprestimoNegado(){
-        assertEquals("Empréstimo liberado", banco.emprestimo(981, false, false));
-        assertEquals("Empréstimo negado", banco.emprestimo(800, false, false));
+        assertEquals("Empréstimo Liberado", banco.emprestimo(981, false, false));
+        assertEquals("Empréstimo Negado", banco.emprestimo(800, false, false));
     }
 }
