@@ -18,7 +18,7 @@ class BankTest {
 
     @Test
     public void emprestimoNegado(){
-        assertEquals("Empréstimo Liberado", banco.emprestimo(981, false, false));
+        assertEquals("Empréstimo Negado", banco.emprestimo(981, false, false));
         assertEquals("Empréstimo Negado", banco.emprestimo(800, false, false));
     }
 }
