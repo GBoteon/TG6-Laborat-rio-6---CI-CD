@@ -16,6 +16,8 @@ public class Bank {
             return "Empréstimo Liberado";
         } else if(saldoMedio < 1000 && bomPagador == false && concessaoEspecial){
             return "Empréstimo Liberado";
+        }else if(saldoMedio < 1000 && concessaoEspecial){
+            return "Empréstimo Liberado";
         } else {
             return "Empréstimo Negado";
         }
